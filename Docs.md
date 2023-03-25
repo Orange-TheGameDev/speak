@@ -5,7 +5,7 @@ Speak.lua DOCUMENTATION
 this is the setup of a Speak.lua script in Love2d:
 
 ------------------
-
+```
 script = {
     'Hi!',
     'This is Speak.lua!',
@@ -20,7 +20,7 @@ functions love.keypressed(key, scancode, isrepeat)
     end
 end
 
-
+```
 ------------------
 
 So what does this do?
@@ -39,6 +39,8 @@ Speak automatically checks to make sure there's still lines to be said, so don't
 This is an NPC script for the game Moth Warrior:
 
 ------------------
+
+```
 
 script = {
     "Hi! I'm the shopkeeper here in Arepeegeeland, and I sell potions.",
@@ -69,5 +71,12 @@ end
 function givePotion()
     oPlayer.potions = oPlayer.potions + 1
 end
+```
 
 ------------------
+
+We start the script and dialog as before, but then we check the position in script (pIS) and depending on where the script is we assign buttons to options.
+
+We also switch rooms and reset the script upon completion.
+
+Hopefully, this will help.
